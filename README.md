@@ -36,11 +36,13 @@ In the path 'GPT-4 Classification/papers', there are some papers for testing.
 ### CHATBOT: Building a chatbot based on cage's database
 
 'CHATBOT.ipynb': chatbot's construction
+
 'cage's database.json': cage's database used in chatbot
 
 ### database:
 
 'cage database.xlsx': final database by manual work
+
 'read excel.ipynb': open 'cage database.xlsx' by pandas 
 
 ## Dependencies
