@@ -7,9 +7,7 @@ We provide you with all the code for this work, and if interested in this workfl
 
 ### GPT-4 Classification: 
 
-  Guiding GPT-4 for multi-label text classification and filtration through prompt engineering
-
-  Please note: In the path 'GPT-4 Classification/papers', there are some papers for testing.
+  ####  In the path 'GPT-4 Classification/papers', there are some papers for testing.
 
   #### GPT-4 Classification.ipynb: multi-label text classification and analysis
 
@@ -17,8 +15,16 @@ We provide you with all the code for this work, and if interested in this workfl
 
   #### classification.txt : prompt for multi-label text classification
 
-· GPT-4 Information Extraction: GPT-4 Extraction of tabular information from filtered texts
+### GPT-4 Information Extraction:
 
+  #### 'GPT-4 Information Extraction.ipynb': Information Extraction and Organization
+  #### 'similarity_evaluation.ipynb': Computing similarity between manual work and GPT-4 work
+  #### 'single-cage instructions.txt' and 'multi-cage instructions.txt': Prompt of information extraction for papers containing only one cage and many cages, respectively
+  #### 'Tabular Informations without bertscore.xlsx': for testing code in 'similarity_evaluation.ipynb'
+  #### 'Tabular Informations with bertscore': providing our results of similarity
+  #### '2022-zhou-et-al-inherently-chiral-cages-via-hierarchical-desymmetrization.txt': this paper's content is too long to be saved in excel so saved in txt
+  #### './level1','./level2','level3': input csv_file for GPT-4 information extraction
+  #### './bertscore': package for similarity's calculation
 · CHATBOT: Building a chatbot based on cage's database
 
 ## Dependencies
