@@ -3,19 +3,19 @@ Knowledge Discovery from Porous Organic Cages Literature Using a Large Language 
 
 We provide you with all the code for this work, and if interested in this workflow, you can do tests with the newly published literature.
 
-Contents
+## Contents
 
 · GPT-4 Classification: 
 
-Guiding GPT-4 for multi-label text classification and filtration through prompt engineering
+  Guiding GPT-4 for multi-label text classification and filtration through prompt engineering
 
-# In the path 'GPT-4 Classification/papers', there are some papers for testing.
+  Please note: In the path 'GPT-4 Classification/papers', there are some papers for testing.
 
 · GPT-4 Information Extraction: GPT-4 Extraction of tabular information from filtered texts
 
 · CHATBOT: Building a chatbot based on cage's database
 
-Dependencies
+## Dependencies
 
 · The libraries needed for running this code are listed below with their required versions:
 
