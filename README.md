@@ -5,11 +5,17 @@ We provide you with all the code for this work, and if interested in this workfl
 
 ## Contents
 
-· GPT-4 Classification: 
+### GPT-4 Classification: 
 
   Guiding GPT-4 for multi-label text classification and filtration through prompt engineering
 
   Please note: In the path 'GPT-4 Classification/papers', there are some papers for testing.
+
+  #### GPT-4 Classification.ipynb: multi-label text classification and analysis
+
+  #### Text_Fragments_labels.xlsx: results of text classification
+
+  #### classification.txt : prompt for multi-label text classification
 
 · GPT-4 Information Extraction: GPT-4 Extraction of tabular information from filtered texts
 
