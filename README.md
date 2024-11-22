@@ -9,7 +9,7 @@ Contents
 
 Guiding GPT-4 for multi-label text classification and filtration through prompt engineering
 
-In the path 'GPT-4 Classification/papers', there are some papers for testing.
+# In the path 'GPT-4 Classification/papers', there are some papers for testing.
 
 · GPT-4 Information Extraction: GPT-4 Extraction of tabular information from filtered texts
 
