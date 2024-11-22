@@ -25,7 +25,7 @@ We provide you with all the code for this work, and if interested in this workfl
   
   #### 'Tabular Informations without bertscore.xlsx': for testing code in 'similarity_evaluation.ipynb'
   
-  #### 'Tabular Informations with bertscore': providing our results of similarity
+  #### 'Tabular Informations with bertscore.xlsx': providing our results of similarity
   
   #### '2022-zhou-et-al-inherently-chiral-cages-via-hierarchical-desymmetrization.txt': this paper's content is too long to be saved in excel so saved in txt
   
