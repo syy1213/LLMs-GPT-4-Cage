@@ -9,11 +9,11 @@ We provide you with all the code for this work, and if interested in this workfl
 
   ####  In the path 'GPT-4 Classification/papers', there are some papers for testing.
 
-  #### GPT-4 Classification.ipynb: multi-label text classification and analysis
+  #### 'GPT-4 Classification.ipynb': multi-label text classification and analysis
 
-  #### Text_Fragments_labels.xlsx: results of text classification
+  #### 'Text_Fragments_labels.xlsx': results of text classification
 
-  #### classification.txt : prompt for multi-label text classification
+  #### 'classification.txt' : prompt for multi-label text classification
 
 ### GPT-4 Information Extraction:
 
@@ -40,8 +40,8 @@ We provide you with all the code for this work, and if interested in this workfl
 
 ### database:
 
-  #### 'cage's database.xlsx': final database by manual work
-  #### '': open database by pandas 
+  #### 'cage database.xlsx': final database by manual work
+  #### 'read excel.ipynb': open 'cage database.xlsx' by pandas 
 
 ## Dependencies
 
