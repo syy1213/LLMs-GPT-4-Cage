@@ -31,6 +31,8 @@ pandas '2.2.2'
 
 tiktoken '0.8.0'
 
+bert_score '0.3.12'
+
 numpy '1.26.4'
 
 seaborn '0.13.2'
