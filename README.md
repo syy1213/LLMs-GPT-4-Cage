@@ -36,7 +36,12 @@ We provide you with all the code for this work, and if interested in this workfl
 ### CHATBOT: Building a chatbot based on cage's database
 
   #### 'CHATBOT.ipynb': chatbot's construction
-  #### 'original-database.json': cage's database used in chatbot
+  #### 'cage's database.json': cage's database used in chatbot
+
+### database:
+
+  #### 'cage's database.xlsx': final database by manual work
+  #### '': open database by pandas 
 
 ## Dependencies
 
