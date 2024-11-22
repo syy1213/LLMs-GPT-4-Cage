@@ -63,6 +63,8 @@ tiktoken '0.8.0'
 
 bert_score '0.3.12'
 
+torch '2.3.1+cpu'
+
 numpy '1.26.4'
 
 seaborn '0.13.2'
