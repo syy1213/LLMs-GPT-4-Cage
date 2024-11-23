@@ -32,6 +32,7 @@ please note:
 1.If some information is not given, use 'None'
 2.The comprehensive synthesis procedures must contain amounts of reactant, solvent and catalysts.
 3.There must be only one organic molecular cage, so the table must not contain multiple rows.
+
 ---------------------------------------------------------------------
 Give you some labeled texts containing information about a new research paper related to organic molecular cages. Please extract from it the name of the molecular cage, the specific surface area(give the whole sentence which describe it), the ccdc number, the topology(eg.[2+3],[4+6] etc.,you need to give the whole sentence which describe it), the comprehensive synthesis procedures, the name of the reactant needed for the synthesis, and the the comprehensive synthesis procedures of the reactant, and then organize these information into the following table:
 
@@ -41,6 +42,7 @@ please note:
 1.If some information is not given, use 'None'
 2.The comprehensive synthesis procedures must contain amounts of reactant, solvent and catalysts.
 3.There may be more than one organic molecular cage, so the table may contain multiple rows.
+
 ---------------------------------------------------------------------
   
 'Tabular Informations without bertscore.xlsx': for testing code in 'similarity_evaluation.ipynb'
