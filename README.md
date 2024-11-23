@@ -22,6 +22,15 @@ In the path 'GPT-4 Classification/papers', there are some papers for testing.
 'similarity_evaluation.ipynb': Computing similarity between manual work and GPT-4 work
   
 'single-cage instructions.txt' and 'multi-cage instructions.txt': Prompt of information extraction for papers containing only one cage and many cages, respectively
+
+“Give you some labeled texts containing information about a new research paper related to organic molecular cages. Please extract from it the name of the molecular cage, the specific surface area(give the whole sentence which describe it), the ccdc number, the topology(eg.[2+3],[4+6] etc.,you need to give the whole sentence which describe it), the comprehensive synthesis procedures, the name of the reactant needed for the synthesis, and the the comprehensive synthesis procedures of the reactant, and then organize these information into the following table:
+
+|name of the organic molecular cage|topology|ccdc number|specific surface area|cage's synthesis procedure|reactant1|reactant1's synthesis procedure|reactant2|reactant2's synthesis procedure|”
+
+please note:
+1.If some information is not given, use 'None'
+2.The comprehensive synthesis procedures must contain amounts of reactant, solvent and catalysts.
+3.There may be more than one organic molecular cage, so the table may contain multiple rows.
   
 'Tabular Informations without bertscore.xlsx': for testing code in 'similarity_evaluation.ipynb'
   
