@@ -1,0 +1,213 @@
+You are a text classifier that classifies paragraphs into nine categories based on what they contain:
+1. this paper's author: Containing information about the author of this paper (There are many consecutively occurring names, the last of which must be followed by an asterisk). Generally this category of paragraph appears earlier in the article.
+2. extra author: Containing authors of other articles, such as background descriptions.
+3. comprehensive synthesis: Containing comprehensive experimental conditions of the chemical reaction. The chemical reaction conditions must appear with clear information about the reaction temperature, reaction time, reactants, products, solvents, and their amounts. Note in particular that the amount is mandatory. This means that if neither volume, weight nor molarity is mentioned in the text, it cannot be attributed to this category.
+4. incomprehensive synthesis: Containing incomprehensive experimental conditions of the chemical reaction. (also a reaction condition, but without very complete information) 
+5. CCDC: Containing CCDC number (The text generally contains the word "CCDC" followed by a string of numbers.)
+6. surface area: Containing information on the specific surface area of a compound. (The text generally contains the word "m2/g".)
+7. affiliation: Containing information about the author's organization, city, or nationality, etc.
+8. Ref: Containing references.
+9. others: paragraphs which fall into none of the previously mentioned categories.
+
+Some examples of paragraphs are given below, along with the corresponding categories, so that you can study them in order to later classify the paragraphs given to you.
+
+paragraph:
+Yinghua Jin,† Bret A. Voss,‡ Athena Jin,† Hai Long,§ Richard D. Noble,‡ and Wei Zhang*,
+†† Department of Chemistry and Biochemistry and ‡ Department of Chemical and Biological Engineering, University of Colorado, Boulder, Colorado 80309, United States § National Renewable Energy Laboratory, Golden, Colorado 80401, United States
+category: this paper's author
+
+paragraph:
+Avinash S. Bhat, Sven M. Elbert, Wen-Shan Zhang, Frank Rominger, Michael Dieckmann, Rasmus R. Schrçder, and Michael Mastalerz*
+category: this paper's author
+
+paragraph:
+a Department of Chemistry, Imperial College London, South Kensington, London, SW7 2AZ, UK. E-mail: k.jelfs@imperial.ac.ukb Department of Chemistry and Materials Innovation Factory, University of Liverpool, 51 Oxford Street, Liverpool, L7 3NY, UK
+category: this paper's author
+
+paragraph:
+Enrico Berardo, ‡a Rebecca L. Greenaway, ‡b Lukas Turcani, a Ben M. Alston, b Michael J. Bennison, b Marcin Miklitz, a Rob Clowes, b Michael E. Briggs, b Andrew I. Cooper b and Kim E. Jelfs *
+category: this paper's author
+
+paragraph:
+[a] J. C. Lauer, Dr. F. Rominger, Prof. Dr. M. Mastalerz Organisch-Chemisches Institut Ruprecht-Karls-Universiteit Heidelberg Im Neuenheimer Feld 270 69120 Heidelberg, Germany E-mail: michael.mastalerz@oci.uni-heidelberg.de [b] Dr. Wen-Shan Zhang, Prof. Dr. Rasmus R. Schroder Centre for Advanced Materials Ruprecht-Karls -Universiteit Heidelberg Im Neuenheimer Feld 225 69120 Heidelberg, Germany
+category: this paper's author
+
+paragraph:
+For instance, Cooper et al. studied the effect of connecting aliphatic tethers of different lengths of diamines in the imine condensation with aromatic trialdehydes.
+category: extra author
+
+paragraph:
+Sindelar and Beer independently employed water-soluble macrocyclic bambusuril or rotaxane to recognize a variety of anions in water.
+category: extra author
+
+paragraph:
+Feigel et al. employed amino acid precursors in synthesizing a trefoil knot, whose formation is driven by hydrogen bonding between the amide building blocks.
+category: extra author
+
+paragraph:
+Mukherjee et al. have recently observed a self-selection process between multiple structural isomers when an unsymmetrical ditopic building block was employed for the synthesis of imine cages, but such processes are very hard to anticipate. In the area of frameworks, Zhang et al. showed that it was possible to obtain COFs with heterogeneous pore structures by using a C2v tritopic building block
+category: extra author
+
+paragraph:
+The cage is significantly larger than our previous largest example CC5 (see comparison in Fig. S1) and approximately the same size as the highly porous adamantoid cage reported by Mastalerz et al. (2.9 nm vs 2.84 nm diameter).
+category: extra author
+
+paragraph:
+C4RACHO (0.10 mmol, 82 mg) and 1,3-diaminopropane (0.2 mmol, 14.8 mg) were added to PhNO2 (6mL). The mixture was sealed in a 20 mL glass vial, which was heated at 100 °C for 3 days. Red block single crystals of CPOC-101 were then obtained with ~ 38% yield and washed with MeOH.
+category: comprehensive synthesis
+
+paragraph:
+In a 20 mL glass vial 5 mL ethanolic solution of 1,3,5-tris(aminomethyl)-2,4,6-trimethylbenzene (X, 2.1 mg, 0.010 mmol) was added drop wise to the solution of 1,3-bis(4-formylphenylethynyl)benzene (A, 5.0 mg, 0.015 mmol) in a mixture of 5mL ethanol and 1 mL chloroform with stirring at room temperature.
+category: comprehensive synthesis
+
+paragraph:
+To a suspension of BTDP (40.0 mg, 0.10 mmol) in dry dichloromethane (20.0 mL), a solution of chiral (R,R)-cyclohexanediamine (22.8 mg, 0.20 mmol) in dry dichloromethane (10.0 mL) was added slowly. The mixture was stirred at room temperature for 5 days. Then the reaction mixture was filtered, and organic phase was evaporated under reduced pressure. The yellow product was obtained by the recrystallization of crude product in dichloromethane and methanol, in a yield of 72% (40.0 mg).
+category: comprehensive synthesis
+
+paragraph:
+Syntheses of cage 7 under different reaction conditions 2-hydroxy -1,3,5 -triformylbenzene (178 mg, 1 mmol) and (1R,2R)-diphenylethylene diamine (318 mg, 1.5 mmol) were dissolved in appropriate mixture of solvents (total volume = 50 mL). In each case, the resulting mixture was stirred under argon atmosphere at room temperature for 14 days. The formed yellow precipitate was filtered off, dried and then activated.
+category: comprehensive synthesis
+
+paragraph:
+Trifluoroacetic acid (26.9 mg, 0.236 mmol, 0.05 equiv. ) was charged to a mixture of the (1R,2R)-(+)-1,2-diphenylethylenediamine (1.50 g, 7.06 mmol, 1.5 equiv. ) and 1,3,5-triformylbenzene (0.764 g, 4.71 mmol, 1.0 equiv. ) in dichloromethane (60 ml) and the mixture was stirred at 15 ºC for 50 h.
+category: comprehensive synthesis
+
+paragraph:
+Reduction of CC7. An oven-dried round-bottom flask (500 mL) was cooled down to room temperature under N2; to this was added CC7(350 mg, 0.1 mmol), CHCl3 (30 mL), and MeOH (150 mL). The resulting suspension was stirred at room temperature for 10 min, NaBH4 (185 mg, 50 mmol) was added slowly. The reaction mixture was then stirred at room temperature under N2 overnight.
+category: comprehensive synthesis
+
+paragraph:
+Synthesis of Pd@CC1r Catalyst. In a typical synthetic protocol, 40mg (0.03 mmol) of CC1r dissolved in 6 mL of CHCl3 was treated with 4 mL of a CHCl3 solution of 20 mg (0.09 mmol) of Pd(OAc)2 for 1 h. Into this reaction mixture was added a methanolic solution of NaBH4 (24.3 mg, 0.18 mmol) dropwise at room temperature, followed by stirring for 20 min.
+category: comprehensive synthesis
+
+paragraph:
+The cages were obtained through [8+12] imine condensation reactions between two relatively simple precursors, tris(4-formylphenyl)amine (Scheme 1, A) and the chiral diamines (R,R)-1,2-cyclohexanediamine (B1) and (R,R)-1,2-cyclohex-4-enediamine (B2) to yield CC7 and CC8, respectively. The reaction occurs without any additional template or catalyst (Scheme 1)to generate the A8B12 cage in good yield (85 – 90%) through formation of 24 new imine bonds.
+category: incomprehensive synthesis
+
+paragraph:
+To achieve this first synthetic goal, hexamethoxytriptycene 1 was partially oxidized to the quinone 2 and condensed with phenylene diamine 3 to give phenazine 4 in 79% yield.
+category: incomprehensive synthesis
+
+paragraph:
+CC20 was obtained by the self-assembly of 8 molecules of 2-hydroxy-1,3,5-triformylbenzene (HO-TFB) with 12 molecules of cis-1,3-CHDA.
+category: incomprehensive synthesis
+
+paragraph:
+The organic cages are formed by reacting 1,3,5-triformylbenzene with different vicinal diamines (Scheme 1a). For CC2, CC3 and CC4, the chirality of the diamine controls the helical chirality of the cage molecule, whereas CC1 and CC13 are synthesised using achiral diamines and prepared as helical racemates.
+category: incomprehensive synthesis
+
+paragraph:
+We report herein a [2+3] phosphate organic cage (cage 1) via the Schiff-base condensation between a phosphate based trialdehyde with a unique tetrahedron geometry and (1R,2R)-(-)-1,2-cyclohexanediamine (Scheme 1).
+category: incomprehensive synthesis
+
+paragraph:
+One can also carry out chemistry on these systems: for example, CC7 can be cleanly reduced to its amine form at room temperature using NaBH4 in a mixture of CHCl3 and MeOH, as supported by NMR spectroscopy and mass spectrometry (Figures S29 and S30).
+category: incomprehensive synthesis
+
+paragraph:
+S51 Crystal structure of compound 3-Et-H CCDC number : 1588273 Solvent: CH2Cl2 Table 2: Crystal data and structure refinement for jol8.  
+category: CCDC
+
+paragraph:
+E-mail: mengxianggao@ccnu.edu.cnd Technology R&D Center, Hubei Tobacco (Group) Co., Ltd, Wuhan, 430070, China. E-mail: zhangyh@hbtobacco.cn Electronic supplementary information (ESI) available: Synthesis details, NMRdata, crystal data, fluorescence and UV data and FTIR. CCDC 2077306 and 2077307.
+category: CCDC
+
+paragraph:
+X-ray data have been deposited at the Cambridge Crystallographic Data Centre (CCDC 948612 contains the supplementary crystallographic data for this paper. These data can be obtained free of charge from The Cambridge Crystallographic Data Centre.
+category: CCDC
+
+paragraph:
+Crystallographic data have been submitted to the Cambridge Crystallographic Database with reference numbers CCDC 707056 (1, EtOAc solvate), CCDC 720848 (1, desolvated), CCDC 720849 (2, desolvated), CCDC 720851 (3, CHCl3 solvate) and CCDC 720850 (3, desolvated, data collected at 400K) and are available free of charge at www.ccdc.cam.ac.uk/data_request/cif.
+category: CCDC
+
+paragraph:
+The apparent BET surface area of the rotary evaporated sample (720 m2/g) was more than twice as high as the slowly crystallized sample (330 m2/g).
+category: surface area
+
+paragraph:
+The Langmuir surface area calculated for 2 from the N2 isotherm was 600 m2/g and the Brunauer Emmett Teller surface area (SABET) was 533 m2/g. Cage 3 also shows a type I N2 sorption isotherm with a corresponding Langmuir surface area of 730 m2/g (SABETD 624 m2/g).
+category: surface area
+
+paragraph:
+The specific BET surface area is with 443 m2/g much larger than accessible by thermal activation and comparable to smaller cages e.g. from Cooper et al. , but significantly lower than for larger cages. Furthermore, the material adsorbs 0.93 wt% H2 (at 77 K and 1 bar), 13.8 wt% CO2 and 2.17 wt% CH4 (both at 273 K, 1 bar). All derived polymer materials have been investigated by nitrogen sorption at 77 K, turning out to be of low porosity with specific surface areas below 26 m2/g. 
+category: surface area
+
+paragraph:
+Therefore, both cage compounds have been investigated by gas sorption. Thermal treatment (120 °C for 3 h) under vacuum led not to a reasonable activation of the pores. In each case, the apparent specific surface area (Brunauer-Emmett-Teller model) never exceeded 11 m2/g (3-Et-Et) or 27 m2/g (3-Et-H) as measured by nitrogen sorption at 77 K.
+category: surface area
+
+paragraph:
+[a] Department of Chemistry, Zhejiang University, Hangzhou 310027 (P.R.China). E-mail:  lihao2015@zju.edu.cn. 
+category: affiliation
+
+paragraph:
+Department of Chemistry, Imperial College London, South Kensington, London, SW7 2AZ, United Kingdom Department of Chemistry and Materials Innovation Factory, University of Liverpool, 51 Oxford Street, Liverpool, L7 3NY, United Kingdom §E.B. and R.L.G. contributed equally. 
+category: affiliation
+
+paragraph:
+Organisch-Chemisches Institut Ruprecht-Karls-Universiteit Heidelberg, Im Neuenheimer Feld 270, 69120 Heidelberg (Germany).
+category: affiliation
+
+paragraph:
+d. Chemical Refining Laboratory, Refining Department, Egyptian Petroleum Research Institute, Nasr City, 11727, Egypt.
+category: affiliation
+
+paragraph:
+McMahon, D. P.; Stephenson, A.; Chong, S. Y.; Little, M. A.; Jones, J. T. A.; Cooper, A. I.; Day, G. M. Faraday Discuss. 2018, 211, 383−399. 
+category: Ref
+
+paragraph:
+A. G. Slater, M. A. Little, A. Pulido, S. Y. Chong, D. Holden, L. Chen, C. Morgan, X. Wu, G. Cheng, R. Clowes, M. E. Briggs, T. Hasell, K. E. Jelfs, G. M. Day, A. I. Cooper, Nat. Chem. 2017, 9, 17–25.
+category: Ref
+
+paragraph:
+Hehre, W. J.; Radom, L.; Schleyer, P. v. R.; Pople, J. A. Ab Initio Molecular Orbital Theory; Wiley: New York, 1986.
+category: Ref
+
+paragraph:
+A. Blanco-Gómez, I. Neira, J. L. Barriada, M. Melle-Franco, C. Peinador, M. D. García, Chem. Sci. 2019, 10, 10680–10686.
+category: Ref
+
+paragraph:
+Key learning points (1) The concept of dynamic covalent chemistry (DCvC) (2) Different types of dynamic covalent reactions (3) Characteristic features of a thermodynamically controlled process (4) Applications of DCvC in development of organic 2-D and 3-D molecular architectures and responsive polymers.
+category: others
+
+paragraph:
+The simulations of the possible structures were carried out in Accelrys Material Studio 7.0 software package. Before the simulations, the structures were firstly optimized in Gaussian 09 package by semi-empirical calculations at PM3 level. The stimulated PXRD patterns were determined by the Reflex module. P1 space group was chosen for the primitive models in the initial simulations. The Pawley refinement of the experimental PXRD was conducted by the Reflux module in the Material Studio 7.0.
+category: others
+
+paragraph:
+Photoirradiation of a non-agitated solution containing hexamerfibers 200 induced homolytic cleavage of disulfide and radical disulfide exchange reaction, resulting in the lateral cross-linking of fibers and formation of a gel 201 from a free flowing solution. In the presence of excess dithiothreitol, quantitative recovery of monomers was obtained from the gel, indicating that the system is not only photo-responsive but alsoredox-responsive.
+category: others
+
+paragraph:
+1H NMR (CDCl3, 400 MHz): d=8.35 (s, 12H), 8.25 (s, 12H), 7.61 (m,48H), 7.07 (m, 48H), 3.52 (brm, 24H), 1.77–1.88 (brs, 72H), 1.55 ppm (brs, 24H). 13C NMR (CDCl3, 100 MHz): d = 159.4, 159.3, 148.9, 148.6, 131.8, 131.6, 129.4, 124.1, 123.9, 75.1, 74.5, 33.6, 24.6 ppm. ESI-MS (MeOH/CHCl3): m/z=1785.5 for C240H240N32 [M+2H]2+, 1190.7 for C240H240N32 [M+3H]3+; MALDI-TOF MS: m/z=3573 for C240H240N32 [M+H]+.
+category: others
+
+paragraph:
+CC7 crystallizes in the cubic space group P213 with two crystallographically independent molecules, each located on a 3-fold axis (Figure S3). CC8 crystallizes isostructurally, with slightly reduced unit cell parameters. The cage molecules CC7 and CC8 are packed only loosely into the three-dimensional structure (Figure 2), giving rise to large internal and external voids which are filled with the solvent dichloro-methane.
+category: others
+
+paragraph:
+Gas sorption analysis. All samples were tested with gas of the following purities: carbon dioxide (SCF grade, BOC gases) and methane (ultrahigh purity, BOC gases) using a Micromeritics ASAP 2020 volumetric adsorption analyzer. Samples were degassed offline at 100 °C for 15 h under vacuum (10-5 bar) before analysis, followed by degassing on the analysis port under vacuum, also at 100 °C. Carbon dioxide isotherms were measured at 273 K.
+category: others
+
+paragraph:
+Figure S48. CO2 and C2H2 adsorption isotherms of calix[4] resorcinarene at 298 K. 
+category: others
+
+paragraph:
+Both cages have tetrahedral Tsymmetry, and by defining thecentral amine nitrogen atoms in the 8 Aunits (Scheme 1) asnodes, its topology is equivalent to that of the [8+12] chiralnanocube structure proposed by Warmuth. The 8 triphenyl-amine moieties occupy the vertices and the 12 diamine linkers occupy the edges of this highly distorted cube (Figure S4). By contrast, the molecular shape, as opposed to the topology, has more similarities with the structural model proposed for arhombicuboctahedral capsule.
+category: others
+
+paragraph:
+Nevertheless, this result indicates the feasibility of operating dynamic imine and olefin metathesis simultaneously to achive complex molecular architectures.
+category: others
+
+paragraph:
+In both polymorphs, the cages are packing mainly via CH-π and dispersion interactions (Figure 1b).In polymorph α, a three-dimensional pore system can be found whereas for polymorph β pores are isolated and thus not accessible. The pores in polymorph α are strongly winded and contain a number of dead-ends.
+category: others
+
+paragraph:
+The observed [2+3] over the expected [4+6] selectivity remains opposed to the previously postulated “odd–even” rule and is attributed to the presence of three OH groups in each aromatic ring.
+category: others
