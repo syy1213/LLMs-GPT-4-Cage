@@ -47,6 +47,10 @@ In the path 'GPT-4 Classification/papers', there are some papers for testing.
 
 'read excel.py': open 'cage database.xlsx' by pandas 
 
+### LOG
+
+ log files for text classification, information extraction and chatbot
+
 ## Dependencies
 
 The libraries needed for running this code are listed below with their required versions:
