@@ -1,0 +1,61 @@
+Input: 
+What is the reducing agent for the conversion of CC3 to RCC3?
+Output:
+The reducing agent used for the conversion of CC3 to RCC3 is sodium borohydride (NaBH4).
+
+Input: 
+Please tell me briefly the exact synthesis route.
+Output:
+1. Dissolve the imine cage CC3-R (926 mg, 0.83 mmol) in a chloroform/methanol mixture (1:1 v/v, 50 mL) and stir until the solution becomes clear.
+2. Add sodium borohydride (1.00 g, 26.5 mmol) to the clear solution and stir for 12 hours at room temperature.
+3. Add water (2 mL) to the reaction mixture and stir for an additional 12 hours.
+4. Remove the solvent under vacuum.
+5. Extract the resulting white solid with chloroform (2 ¡Á 50 mL).
+6. Combine the organic phase and wash it with water (2 ¡Á 100 mL).
+7. Dry the chloroform phase using anhydrous magnesium sulfate (MgSO4) before removing it under vacuum.
+8. RCC3 (crude yield = 900 mg, 95.1%) is obtained as a white solid.
+9. Purify RCC3 using a reversible reaction with acetone:
+   - Dissolve 1000 mg of crude RCC3 in 100 mL of acetone and allow the solution to stand.
+   - Crystals start to appear on the wall of the flask after 30 minutes.
+   - Collect the crystals (AT-RCC3) after one day by filtration.
+   - Dissolve the crystals again in a chloroform/methanol mixture (1:1 v/v) and stir.
+   - Add several drops of distilled water to the solution and stir for another 12 hours.
+   - Remove the solvents to recover pure RCC3 (680 mg, 70.4%).
+This process effectively converts CC3 to RCC3 using sodium borohydride as the reducing agent.
+
+Input: 
+Please list all molecular cages reported by Prof. Andy Cooper (name and article title only)
+Output:
+Here are the molecular cages reported by Prof. Andy Cooper along with the respective article titles:
+1. **Cage Name: CC7**
+   - **Article Title:** Large Self-Assembled Chiral Organic Cages: Synthesis, Structure, and Shape Persistence
+2. **Cage Name: CC8**
+   - **Article Title:** Large Self-Assembled Chiral Organic Cages: Synthesis, Structure, and Shape Persistence
+3. **Cage Name: TCC1 [3+6]**
+   - **Article Title:** Cage Doubling: Solvent-Mediated Re-equilibration of a [3 + 6] Prismatic Organic Cage to a Large [6+12] Truncated Tetrahedron
+4. **Cage Name: CC20**
+   - **Article Title:** Synthesis of a Large, Shape-Flexible, Solvatomorphic Porous Organic Cage
+5. **Cage Name: CC13**
+   - **Article Title:** Controlling the Crystallization of Porous Organic Cages: Molecular Analogs of Isoreticular Frameworks Using Shape-Specific Directing Solvents
+6. **Cage Name: CC10**
+   - **Article Title:** Supramolecular engineering of intrinsic and extrinsic porosity in covalent organic cages
+7. **Cage Name: CC9**
+   - **Article Title:** Supramolecular engineering of intrinsic and extrinsic porosity in covalent organic cages
+8. **Cage Name: Cage 3-R**
+   - **Article Title:** Modular and Predictable Assembly of Porous Organic Molecular Crystals
+9. **Cage Name: CC12**
+   - **Article Title:** Shape Prediction for Supramolecular Organic Nanostructures: [4 + 4] Macrocyclic Tetrapods
+10. **Cage Name: Cage 5-R**
+    - **Article Title:** Supramolecular engineering of intrinsic and extrinsic porosity in covalent organic cages
+11. **Cage Name: CC11**
+    - **Article Title:** Shape Prediction for Supramolecular Organic Nanostructures: [4 + 4] Macrocyclic Tetrapods
+12. **Cage Name: CC6**
+    - **Article Title:** Selective Gas Sorption in a [2+3] "Propeller" Cage Crystal
+13. **Cage Name: CC18**
+    - **Article Title:** Periphery-Functionalized Porous Organic Cages
+14. **Cage Name: Cage 3**
+    - **Article Title:** Porous Organic Cages
+15. **Cage Name: TCC1-R**
+    - **Article Title:** Reticular Synthesis of Porous Molecular 1-Dimensional Nanotubes and 3-Dimensional Networks
+16. **Cage Name: TCC3-R**
+    - **Article Title:** Reticular Synthesis of Porous Molecular 1-Dimensional Nanotubes and 3-Dimensional Networks
