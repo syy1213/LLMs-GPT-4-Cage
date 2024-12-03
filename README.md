@@ -13,7 +13,9 @@ In the path 'GPT-4 Classification/papers', there are some papers for testing.
 
 'Similarity of Information Extractions.py': calculation of similarity of information extraction
 
-'Text_Fragments_labels.xlsx': results of text classification
+'Text_Fragments_labels.xlsx': GPT-4's results of text classification
+
+'Text_Fragments_labels_GPT_4o.xlsx': GPT-4o's results of text classification
 
 'classification.txt' : prompt for multi-label text classification
 
