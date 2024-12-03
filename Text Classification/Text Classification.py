@@ -183,5 +183,5 @@ def main(pdf_list):
     return class_df
 
 # replace the variables of the main() function with a list of your pdf files
-class_df = main(["./papers/2008---Chem Comm.pdf"])
+class_df = main(["./papers/science-aax7427.pdf"])
 class_df.to_excel('test.xlsx')
