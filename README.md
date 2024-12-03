@@ -43,9 +43,9 @@ In the path 'GPT-4 Classification/papers', there are some papers for testing.
 
 ### database:
 
-'cage database.xlsx': final database by manual work
+'cage database.xlsx': A database that has been manually compiled through careful reading of the literature. It can be used both as a source of information for the chatbot and to assess GPT-4's ability to extract knowledge from the literature.
 
-'read excel.py': open 'cage database.xlsx' by pandas 
+'read excel.py': Used to parse 'cage database.xlsx' through the Pandas library, avoiding potential transcoding error problems.
 
 ### LOG
 
