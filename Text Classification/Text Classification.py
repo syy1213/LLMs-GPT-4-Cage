@@ -19,6 +19,7 @@ def count_tokens(text):
     num_tokens = len(encoding.encode(text))
     return num_tokens
 
+# Extract text from a pdf file, output a dataframe containing multiple text fragments
 def get_txt_from_pdf(pdf_files,filter_ref = False, combine=False):
     data = []
     pdf_content_dict = {}
@@ -42,6 +43,7 @@ def get_txt_from_pdf(pdf_files,filter_ref = False, combine=False):
     df = pd.DataFrame(data)
     return df
 
+# Integrating shorter text fragments into longer text fragments
 def combine_text(df):
     start_index = 0
     all_groups = []
@@ -64,6 +66,7 @@ def combine_text(df):
     new_df = pd.DataFrame(data)
     return new_df
 
+# Combining multiple text fragments together for sending to GPT-4, which reduces token consumption of GPT-4
 def organize_text_to_input(new_df):
     index = 1
     part_num = 1
@@ -92,6 +95,7 @@ def organize_text_to_input(new_df):
         index += 1
     return inputs
 
+# Running GPT-4 to output the categorisation of the text fragments
 def run_GPT(inputs):
     all_inputs_list = list(inputs.keys())
     outputs = {}
@@ -123,6 +127,7 @@ def run_GPT(inputs):
             print(f"Error: {str(e)}")
     return outputs
 
+# Organizing text categorisation into a dataframe
 def organize_answer(inputs,outputs):
     data = []
     for index, key in enumerate(inputs.keys()):
