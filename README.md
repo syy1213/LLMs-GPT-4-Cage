@@ -7,7 +7,7 @@ We provide you with all the code for this work, and if interested in this workfl
 
 ### GPT-4 Classification: 
 
-In the path 'GPT-4 Classification/papers', there are some papers for testing.
+In the path 'GPT-4 Classification/papers', there are some pdfs for testing.
 
 'GPT-4 Classification.py': multi-label text classification and analysis
 
